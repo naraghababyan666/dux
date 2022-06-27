@@ -25,7 +25,7 @@ export default {
 
 <style scoped lang="scss">
 .menu{
-  background-color: grey;
+  //background-color: grey;
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -40,7 +40,7 @@ export default {
     text-transform: uppercase;
     color: #F0F0F0;
     a{
-
+      color: #F0F0F0;
       text-decoration: none;
       list-style-type: none;
     }
