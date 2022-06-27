@@ -29,7 +29,7 @@ export default {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  //padding: 25px;
+  padding: 25px;
   .menu-items{
     font-family: 'Oxygen';
     font-style: normal;

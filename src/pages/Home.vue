@@ -17,7 +17,7 @@
           </div>
         </div>
       </div>
-      <div class="devider">
+      <div class="divide">
         <img src="../assets/images/123123123.svg" />
       </div>
       <div class="history">
@@ -67,7 +67,7 @@
           </marquee>
         </div>
       </div>
-      <div class="devider">
+      <div class="divide">
         <img src="../assets/images/123123123.svg" />
       </div>
       <div class="partnership">
@@ -75,24 +75,101 @@
           <p>Synergy and partnership</p>
         </div>
         <div class="items">
-          <div class="column">
-            <div class="item">123213</div>
-            <div class="item">123123</div>
+          <div class="item">
+            <img src="../assets/images/partnership-bg.png" />
+            <img src="../assets/images/first-logo.svg" />
+            <div class="content">
+              <p class="title">In People we Trust</p>
+              <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers demand.
+                At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest standard. Our teams and people are our greatest asset.</p>
+            </div>
+            </div>
+          <div class="item">
+            <img src="../assets/images/partnership-bg.png" />
+            <img src="../assets/images/second-logo.svg" />
+            <div class="content">
+              <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>
+              <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers demand.
+                At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest standard. Our teams and people are our greatest asset.</p>
+            </div>
+            </div>
+          <div class="item">
+            <img src="../assets/images/partnership-bg.png" />
+            <img src="../assets/images/third-logo.svg" />
+            <div class="content">
+              <p class="title">Resilience is Key – We have a plan</p>
+              <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of before - This is our strength.
+                We learn from our mistakes and create something different. We live by the 1+1=3 principle, because with each new try, we add greater value. Every time.</p>
+            </div>
+            </div>
+          <div class="item">
+            <img src="../assets/images/partnership-bg.png" />
+            <img src="../assets/images/fourth-logo.svg" />
+            <div class="content">
+              <p class="title">Team Dux – Together. – We are colleagues</p>
+              <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand together in our mission. There is no hierarchy.
+                You can have a coffee with your immediate colleagues or the "Head of Anything". This is by far the most important value we hold.</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div class="divide">
+        <img src="../assets/images/we-have.svg" />
+      </div>
+      <div class="slider">
+        <div class="title">
+          <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
+        </div>
+      </div>
+      <div class="divider">
+        <marquee direction="row" height="100" width="100%" bgcolor="#010C28" Scrollamount=40>
+          <img src="../assets/images/marquee/1.svg" />
+          WE LOVE
+          <img src="../assets/images/marquee/2.svg" />
+          WE LOVE
+          <img src="../assets/images/marquee/3.svg" />
+          WE LOVE
+        </marquee>
+        <marquee direction="right" height="100" width="100%" bgcolor="#010C28" Scrollamount=40>
+          <img src="../assets/images/marquee/5.svg" />
+          WHAT WE DO
+          <img src="../assets/images/marquee/4.svg" />
+          WHAT WE DO
+        </marquee>
+      </div>
+<!--      <div class="mission">-->
+<!--        <img src="../assets/images/mission-divider.svg" />-->
+<!--      </div>-->
+      <div class="events">
+        <div class="divider">
+          <img src="../assets/images/event-divider.svg" />
+        </div>
+        <div class="content">
+          <div class="title">
+            <p>We always <span class="blue">participate</span> in</p>
           </div>
-          <div class="column">
-            <div class="item">123213</div>
-            <div class="item">123123</div>
+          <div class="organizations">
+            <img src="../assets/images/organizations/sigma.svg" />
+            <img src="../assets/images/organizations/affiliate.svg" />
+            <img src="../assets/images/organizations/sigma.svg" />
+            <img src="../assets/images/organizations/affiliate.svg" />
           </div>
         </div>
+      </div>
+      <div class="footer">
+        <FooterPart />
+
       </div>
     </div>
 </template>
 
 <script>
 import Header from '../components/Header' ;
+import FooterPart from "@/components/Footer";
+
 export default {
     name: 'home-page',
-  components: { Header}
+  components: {FooterPart, Header}
 
 }
 
@@ -105,7 +182,6 @@ export default {
 .header{
   background: linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   min-height: 500px;
-  padding: 25px;
   .bg-img{
     width: 100%;
     background-image: url("../assets/images/home-bg.png");
@@ -114,7 +190,8 @@ export default {
     min-height: 700px;
     .menu{
       .content{
-        margin-top: 240px;
+        margin-top: 210px;
+        padding: 25px;
         .p{
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
@@ -150,7 +227,7 @@ export default {
     }
   }
 }
-.devider{
+.divide{
   padding-top: 150px;
   display: flex;
   width: 100%;
@@ -214,24 +291,163 @@ export default {
   }
 }
 .partnership{
+  width: 100%;
+  background-color: #010C28;
+  .title{
+    p{
+      margin: 0;
+      padding: 90px 0 50px 0;
+      font-family: 'Oxygen';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 35px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #F0F0F0;
+    }
+  }
   .items{
     display: flex;
-    .column{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 400px;
-      .item{
-        background-image: url('../assets/images/partnership-bg.png');
-        background-repeat: no-repeat;
-        background-position: top;
-        //-webkit-clip-path: polygon(100% 100%, 100% 31%, 44% 31%, 33% 26%, 7% 26%, 0 31%, 0 100%);
-        //clip-path: polygon(100% 100%, 100% 31%, 44% 31%, 33% 26%, 7% 26%, 0 31%, 0 100%);
-        min-height: 400px;
-        width: 40%;
+    flex: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    .item{
+      position: relative;
+      width:45vw;
+      margin-bottom: 30px;
+      img:nth-child(2){
+        position: absolute;
+        top: 24px;
+        left: 24px;
+      }
+      .content{
+        position: absolute;
+        top: 150px;
+        left: 24px;
+        color: white;
+        .title{
+          font-family: 'Oxygen';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          margin: 0 0 24px 0;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: #F0F0F0;
+        }
+        p:nth-child(2){
+          font-family: 'Exo', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #F0F0F0;
+          width: 30vw;
+        }
+      }
+      //.title{
+      //  position: absolute;
+      //  top: 150px;
+      //  font-family: 'Oxygen';
+      //  font-style: normal;
+      //  font-weight: 400;
+      //  font-size: 22px;
+      //  line-height: 28px;
+      //  letter-spacing: 0.03em;
+      //  text-transform: uppercase;
+      //  color: #F0F0F0;
+      //  left: 24px;
+      //}
+      //.content{
+      //  position: absolute;
+      //  left: 24px;
+      //}
+    }
+
+
+    }
+  }
+.slider{
+  background-color: #010C28;
+  padding-top: 95px;
+  p{
+    width: 740px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 105%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #F0F0F0;
+  }
+}
+.divider{
+  padding-top: 150px;
+  width: 100%;
+  background-color: #010C28;
+  align-items: flex-end;
+  color: white;
+
+  marquee{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 118px;
+    line-height: 95%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #F0F0F0;
+    img{
+      width: 100px;
+      height: 100px;
+    }
+    p{
+      margin: 0;
+    }
+    //display: flex;
+  }
+}
+.events{
+  background-color: #010C28;
+  .divider, .divider img{
+    width: 100%;
+  }
+  .content{
+    .title{
+      p {
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 105%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #F0F0F0;
+      }
+    }
+    .organizations{
+      width: fit-content;
+      margin: 0 auto;
+      img:not(:last-child){
+        margin-right: 130px;
       }
 
     }
   }
+}
+.footer{
+  background-color: #010C28;
 }
 </style>
