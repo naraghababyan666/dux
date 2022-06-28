@@ -196,7 +196,6 @@
 
 import Header from '../components/Header' ;
 import FooterPart from "@/components/Footer";
-import 'vue3-carousel/dist/carousel.css';
 
 export default {
     name: 'home-page',
