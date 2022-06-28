@@ -25,16 +25,19 @@
         </div>
       </form>
     </div>
+    <div class="footer">
+      <FooterPart />
+    </div>
   </div>
 </template>
 
 <script>
 import HeaderPart from "@/components/Header";
-
+import FooterPart from "@/components/Footer"
 export default {
 
   name: "Contact-us",
-  components: {HeaderPart}
+  components: {HeaderPart, FooterPart}
 
 }
 </script>
@@ -180,6 +183,9 @@ export default {
       }
     }
   }
+}
+.footer{
+  background-color: #010C28;
 }
 @media only screen and (max-width: 1300px){
 
