@@ -120,6 +120,35 @@
         <div class="title">
           <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
         </div>
+
+<!--        <carousel :items-to-show="2.5" ref="myCarousel">-->
+<!--          <slide key="1">-->
+<!--             <img src="../assets/images/slider/1.png" />-->
+<!--          </slide>-->
+<!--          <slide key="2">-->
+<!--             <img src="../assets/images/slider/2.png" />-->
+<!--          </slide>-->
+<!--          <slide key="3">-->
+<!--             <img src="../assets/images/slider/3.png" />-->
+<!--          </slide>-->
+<!--          <slide key="4">-->
+<!--             <img src="../assets/images/slider/4.png" />-->
+<!--          </slide>-->
+
+<!--        </carousel>-->
+<!--        <div class="dots">-->
+<!--          <div class="left" >-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-left" viewBox="0 0 16 16">-->
+<!--              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>-->
+<!--            </svg>-->
+<!--          </div>-->
+<!--          <div class="right"  onclick="this.myCarousel.value.next();">-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">-->
+<!--              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>-->
+<!--            </svg>-->
+
+<!--          </div>-->
+<!--        </div>-->
       </div>
       <div class="divider">
         <marquee direction="row" height="100" width="100%" bgcolor="#010C28" Scrollamount=40>
@@ -164,11 +193,18 @@
 </template>
 
 <script>
+
 import Header from '../components/Header' ;
 import FooterPart from "@/components/Footer";
+import 'vue3-carousel/dist/carousel.css';
 
 export default {
     name: 'home-page',
+    data(){
+        return {
+
+        }
+    },
   components: {FooterPart, Header}
 
 }

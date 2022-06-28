@@ -17,8 +17,13 @@
 </template>
 
 <script>
+
 export default {
-    name: 'header-part'
+    name: 'header-part',
+  components: {
+
+
+  }
 }
 
 </script>
