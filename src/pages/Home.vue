@@ -120,35 +120,6 @@
         <div class="title">
           <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
         </div>
-
-<!--        <carousel :items-to-show="2.5" ref="myCarousel">-->
-<!--          <slide key="1">-->
-<!--             <img src="../assets/images/slider/1.png" />-->
-<!--          </slide>-->
-<!--          <slide key="2">-->
-<!--             <img src="../assets/images/slider/2.png" />-->
-<!--          </slide>-->
-<!--          <slide key="3">-->
-<!--             <img src="../assets/images/slider/3.png" />-->
-<!--          </slide>-->
-<!--          <slide key="4">-->
-<!--             <img src="../assets/images/slider/4.png" />-->
-<!--          </slide>-->
-
-<!--        </carousel>-->
-<!--        <div class="dots">-->
-<!--          <div class="left" >-->
-<!--            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-left" viewBox="0 0 16 16">-->
-<!--              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>-->
-<!--            </svg>-->
-<!--          </div>-->
-<!--          <div class="right"  onclick="this.myCarousel.value.next();">-->
-<!--            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">-->
-<!--              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>-->
-<!--            </svg>-->
-
-<!--          </div>-->
-<!--        </div>-->
       </div>
       <div class="divider">
         <marquee direction="row" height="100" width="100%" bgcolor="#010C28" Scrollamount=40>
@@ -165,10 +136,76 @@
           <img src="../assets/images/marquee/4.svg" />
           WHAT WE DO
         </marquee>
+        <div class="content">
+          <div class="item">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg>
+              <h3>DUXPlatform</h3>
+            </div>
+            <h4>IGaming platform that includes a casino and a sports betting solution. Innovative. Flexible. Comfortable. Unique.</h4>
+          </div>
+          <div class="item">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg>
+              <h3>Affiliate Program</h3>
+            </div>
+            <h4>A strategic partner of Chilli Partners, with huge expertise and connections in affiliate marketing. The main office is located in Malta.</h4>
+          </div>
+          <div class="item">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg>
+              <h3>DuxOperation</h3>
+            </div>
+            <h4>A team of professionals in the field of casino and sports operations. We have experience working with the largest brands in the world. We have the following departments: CRM, VIP, support, antifraud, payments, BI, and more.</h4>
+          </div>
+          <div class="item">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg>
+              <h3>DUXVentures</h3>
+            </div>
+            <h4>We invest money in what we understand: iGaming, mobile marketing, digital, and crypto. The main principle is 1+1=3. We don’t just offer money. We give the project our expertise, experience, skills, and abilities.</h4>
+          </div>
+        </div>
       </div>
-<!--      <div class="mission">-->
-<!--        <img src="../assets/images/mission-divider.svg" />-->
-<!--      </div>-->
+      <div class="mission">
+        <div class="title">
+          <img src="../assets/images/mission-divider.svg" />
+        </div>
+        <div class="content">
+          <p>Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our team</span> and build an awesome <span class="blue">ecosystem</span></p>
+          <img src="../assets/images/mission/6.png" class="forth_figure" />
+          <img src="../assets/images/mission/23.png" class="second_figure" />
+          <img src="../assets/images/mission/33.png" class="third_figure"/>
+          <img src="../assets/images/mission/45.png" class="first_figure" />
+        </div>
+      </div>
+      <div class="gambling">
+        <div class="title">
+          <img src="../assets/images/gambling-bg.png" />
+        </div>
+        <div class="content">
+          <div class="figure">
+            <p>Gambling should always be seen as entertainment and nothing else. Unfortunately, sometimes people can take it too far and potentially lose control of their betting.
+              You should never consider gambling as a source of income or a chance to recover from debt.
+              Always keep track of the time and money you spent on gambling, check this with yourself every day.
+            </p>
+            <div class="circle">
+              READ MORE
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="#00FFFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="events">
         <div class="divider">
           <img src="../assets/images/event-divider.svg" />
@@ -182,6 +219,21 @@
             <img src="../assets/images/organizations/affiliate.svg" />
             <img src="../assets/images/organizations/sigma.svg" />
             <img src="../assets/images/organizations/affiliate.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="offices">
+        <div class="title">
+          <img src="../assets/images/offices/Header.png" />
+        </div>
+        <div>
+          <div class="office">
+            <img src="../assets/images/offices/3.png" />
+            <img src="../assets/images/offices/1.png" />
+            <img src="../assets/images/offices/2.png" class="abs"/>
+          </div>
+          <div class="map">
+            <img src="../assets/images/offices/map.png" />
           </div>
         </div>
       </div>
@@ -214,6 +266,8 @@ export default {
 .blue{
   color: #2F5BD8;
 }
+
+
 .header{
   background: linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   min-height: 500px;
@@ -263,11 +317,12 @@ export default {
   }
 }
 .divide{
-  padding-top: 150px;
+  //padding-top: 150px;
   display: flex;
-  width: 100%;
+  //width: 100%;
   background-color: #010C28;
   align-items: flex-end;
+  padding: 150px 25px 0 25px;
   img{
     width: 100%;
   }
@@ -453,8 +508,158 @@ export default {
     //display: flex;
   }
 }
+.divider{
+  .content{
+    padding: 200px 25px 0 25px;
+    .item{
+      border-top: 1px solid #828FA1;
+      display: flex;
+      padding: 10px 0 110px 0;
+      align-items: center;
+      justify-content: space-between;
+      div{
+        display: flex;
+        align-items: center;
+        width: 35%;
+        svg{
+          margin-right: 100px;
+        }
+        h3{
+          font-family: 'Oxygen';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 38px;
+          line-height: 48px;
+          margin: 0;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: #F0F0F0;
+        }
+      }
+      h4{
+        width: 35%;
+        font-family: 'Exo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        margin: 0;
+        line-height: 27px;
+        color: #F0F0F0;
+      }
+    }
+  }
+}
+.mission{
+  padding-top: 70px;
+  background-color: #010C28;
+  .title{
+    //width: 100%;
+    padding: 0 25px;
+    img{
+      width: 100%;
+    }
+  }
+  .content{
+    padding: 300px 300px 180px 300px;
+    position: relative;
+    p{
+      font-family: 'Oxygen';
+      font-style: normal;
+      font-weight: 400;
+      width: 65%;
+      margin: 0;
+      font-size: 58px;
+      line-height: 105%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #F0F0F0;
+    }
+    .first_figure{
+      position: absolute;
+      left: 25px;
+      top: 30px;
+    }
+    .second_figure{
+      position: absolute;
+      right: 0;
+      top: 20%;
+    }
+    .third_figure{
+      position: absolute;
+      right: 20%;
+      top: 30px;
+    }
+    .forth_figure{
+      position: absolute;
+      right: 25%;
+      bottom: 0;
+    }
+  }
+}
+.gambling{
+  background-color: #010C28;
+  padding: 0 25px;
+  .title{
+    width: 100%;
+    padding-bottom: 100px;
+    img{
+      width: 100%;
+    }
+  }
+  .content{
+    width: 100%;
+    .figure{
+      background-image: url('../assets/images/gambling-fon.png');
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 auto;
+      padding: 112px 90px 90px 50px ;
+      p{
+        font-family: 'Exo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        margin: 0;
+        width: 50%;
+        line-height: 47px;
+        color: #F0F0F0;
+      }
+      .circle{
+        background-color: #010C28;
+        width: 130px;
+        height: 130px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 105%;
+        /* identical to box height, or 15px */
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        /* Text/Grey 1 */
+
+        color: #F0F0F0;
+        border-radius: 50%;
+      }
+    }
+  }
+
+}
 .events{
   background-color: #010C28;
+  padding: 0 25px;
   .divider, .divider img{
     width: 100%;
   }
@@ -479,6 +684,36 @@ export default {
         margin-right: 130px;
       }
 
+    }
+  }
+}
+.offices{
+  padding: 150px 25px;
+  background-color: #010C28;
+  .title{
+    width: 100%;
+    padding-bottom: 100px;
+    img{
+      width: 100%;
+    }
+  }
+  div{
+    .office{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .abs{
+        position: absolute;
+        bottom: -30%;
+        left: 40%;
+      }
+    }
+    .map{
+      width: 100%;
+      img{
+        width: 100%;
+      }
     }
   }
 }
