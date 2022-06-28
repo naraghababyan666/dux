@@ -262,7 +262,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .blue{
   color: #2F5BD8;
 }
