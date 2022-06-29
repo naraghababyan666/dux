@@ -63,14 +63,82 @@
         </div>
       </div>
     </div>
+    <div class="invest">
+      <div class="title">
+        <img src="../assets/images/ventures/invest/header.svg" />
+      </div>
+      <div class="description">
+        <div class="list">
+          <div class="list__title">
+            <p>There are more than <span class="blue">350 professionals</span> in our team</p>
+          </div>
+          <div class="items">
+            <ul>
+              <li>Developers,</li>
+              <li>BI analyticians,</li>
+              <li>Marketologists,</li>
+              <li>Designers,</li>
+              <li>lawyers,</li>
+              <li>financiers,</li>
+              <li>And many more.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="img">
+          <img src="../assets/images/ventures/invest/image.png" />
+        </div>
+      </div>
+      <div class="advert">
+        <p>WE ARE A <span class="blue">STRONG TEAM</span> THAT HAS BEEN WORKING IN IGAMING FOR MORE THAN <span class="blue">8 YEARS.</span>
+          WHEN WE INVEST, <span class="blue">WE NOT ONLY INVEST MONEY,</span> BUT ALL THE EXPERTISE WE HAVE GATHERED DURING OUR OWN BUSINESS ADVENTURE.
+          WE CAN OFFER ALL OUR <span class="blue">INVALUABLE KNOWLEDGE AND EXPERIENCE,</span> WHICH WE CALL <span class="blue"> SMART MONEY.</span>
+          WE CAN HELP YOU <span class="blue">ENTER THE IGAMING MARKET</span> AND SAVE TIME.</p>
+      </div>
+    </div>
+    <div class="introduce">
+      <div class="title">
+        <img src="../assets/images/ventures/introduce/header.svg" />
+      </div>
+      <div class="content">
+        <div class="request">
+          <p>Please <span class="blue">tell us</span> the following about <span class="blue">your business:</span></p>
+        </div>
+        <div class="list">
+          <ul>
+            <li><span>Please write your name and your company name.</span></li>
+            <li><span>Tell us your position within the company.</span></li>
+            <li><span>What does your company do? What is its main idea?</span></li>
+            <li><span>What are the advantages of your business? How can it compete on the market?</span></li>
+            <li><span>How do you think we can help your company? What do you want from our collaboration?</span></li>
+            <li><span>Please leave your request in our contact form. These questions will help us get acquainted and find common ground.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="title">
+        <p>Have a <span class="blue">cool idea</span> and want to conquer the <span class="blue">iGaming market?</span>
+          Then write to us and we'll figure out how to make a <span class="blue">great product together.</span></p>
+      </div>
+      <div class="form">
+        <input type="email" placeholder="You contact e-mail">
+        <textarea placeholder="Comment"></textarea>
+        <p>apply now</p>
+      </div>
+    </div>
+    <div class="footer">
+      <FooterPart />
+
+    </div>
   </div>
 </template>
 
 <script>
 import HeaderPart from "@/components/Header";
+import FooterPart from "@/components/Footer";
 export default {
   name: "Ventures-page",
-  components: {HeaderPart}
+  components: {FooterPart, HeaderPart}
 }
 </script>
 
@@ -225,6 +293,204 @@ export default {
         }
       }
     }
+  }
+  .invest{
+    background-color: #010C28;
+    .title{
+      padding: 0 25px;
+      img{
+        width: 100%;
+      }
+    }
+    .description{
+      padding: 0 25px;
+      margin-top: 90px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .list{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &__title{
+          p{
+            font-family: 'Oxygen';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 58px;
+            line-height: 105%;
+            margin: 0;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #F0F0F0;
+          }
+        }
+        .items{
+          margin-top: 50px;
+          ul{
+            list-style-image: url("../assets/images/ventures/invest/dot.svg");
+            li{
+              font-family: 'Oxygen';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              margin-bottom: 20px;
+              line-height: 25px;
+              letter-spacing: 0.03em;
+              text-transform: uppercase;
+              color: #F0F0F0;
+              &::before{
+                margin-left: 15px;
+              }
+            }
+            li:before{
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+      .img{
+        width: 45%;
+        img{
+          width: 100%;
+          float: right;
+        }
+      }
+    }
+    .advert{
+      padding: 80px 80px 150px 80px;
+      p{
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #F0F0F0;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .introduce{
+    background-color: #010C28;
+    .title{
+      padding: 0 25px;
+      img{
+        width: 100%;
+      }
+    }
+    .content{
+      padding: 0 25px;
+      display: flex;
+      margin-top: 90px;
+      justify-content: space-between;
+      align-items: flex-start;
+      .request{
+        width: 40%;
+        p{
+          font-family: 'Oxygen';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 60px;
+          //margin-top: 90px;
+          line-height: 105%;
+          margin: 0;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #F0F0F0;
+        }
+      }
+      .list{
+        width: 40%;
+        ul{
+          list-style-image: url("../assets/images/ventures/invest/dot.svg");
+          li{
+            &:not(:last-child){
+              margin-bottom: 25px;
+            }
+            span{
+              font-family: 'Exo';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 27px;
+              color: #F0F0F0;
+              position: relative;
+              left: 35px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact{
+    padding: 150px 0;
+    background-color: #010C28;
+    .title{
+      width: 70%;
+      margin: 0 auto;
+      p{
+        margin: 0;
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 105%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #F0F0F0;
+      }
+    }
+    .form{
+      width: 35%;
+      margin: 0 auto;
+      margin-top: 90px;
+      input, textarea{
+        width: 100%;
+      }
+      input{
+        border: 1px solid #828FA1;
+        background: transparent;
+        padding: 15px 0 15px  15px;
+        border-radius: 10px;
+        color:white;
+      }
+      textarea{
+
+        border: 1px solid #828FA1;
+        background: transparent;
+        padding: 15px 0 15px  15px;
+        margin-top: 20px;
+        border-radius: 10px;
+        resize: none;
+        color: white;
+      }
+      p{
+        padding: 17px 0 17px  15px;
+        width: 100% ;
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 105%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #F0F0F0;
+        cursor: pointer;
+        text-align: left;
+        background: #2F5BD8;
+        border-radius: 10px;
+      }
+    }
+  }
+  .footer{
+    background-color: #010C28;
   }
 }
 </style>
