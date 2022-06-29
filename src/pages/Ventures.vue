@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <div class="header">
-      <HeaderPart />
-      <img src="../assets/images/ventures/header-bg.png"/>
+      <div class="header__menu">
+        <HeaderPart />
+      </div>
+<!--      <img src="../assets/images/ventures/header-bg.png"/>-->
       <div class="content">
         <p class="p">
                 <span class="brave">
@@ -146,14 +148,31 @@ export default {
 .blue{
   color: #2F5BD8;
 }
+@media screen {
+
+}
 .container{
   .header{
     background: linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+    position: relative;
+    z-index: 1;
+    &__menu{
+      z-index: 10;
+      background-image: url('../assets/images/ventures/header-bg.png');
+      background-repeat: no-repeat;
+      min-height: 300px;
+      background-position: right;
+    }
     img{
-      margin-top: -90px;
-      text-align: right;
-      display: block;
-      margin-left: auto;
+      //margin-top: -90px;
+      //z-index: -99;
+      //text-align: right;
+      //display: block;
+      //margin-left: auto;
+      position: absolute;
+      z-index: 3;
+      right: 0;
+      top: 0;
     }
 
     .content{

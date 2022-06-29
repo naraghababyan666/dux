@@ -149,6 +149,7 @@ export default {
       display: flex;
       flex-direction: column;
       &-input{
+        color: white;
         resize: none;
         max-width: 510px;
         height: 48px;

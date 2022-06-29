@@ -1,16 +1,16 @@
 <template>
   <div>
     <div class="menu">
-      <div class="logo">
+      <div class="logo" @click="this.$router.push('/')">
         <img src="../assets/images/logo.svg">
       </div>
       <div class="menu-items">
         <router-link to="/">About us</router-link>
-        <router-link to="/">Ventures</router-link>
+        <router-link to="/ventures">Ventures</router-link>
         <router-link to="/">Operation</router-link>
         <router-link to="/">DUXPlatform</router-link>
-        <router-link to="/">Careers</router-link>
-        <router-link to="/">Contact us</router-link>
+        <router-link to="/careers">Careers</router-link>
+        <router-link to="/contact">Contact us</router-link>
       </div>
     </div>
   </div>
@@ -35,6 +35,9 @@ export default {
   justify-content:space-between;
   align-items: center;
   padding: 25px;
+  .logo{
+    cursor: pointer;
+  }
   .menu-items{
     font-family: 'Oxygen';
     font-style: normal;
