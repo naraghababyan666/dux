@@ -12,7 +12,7 @@
                     <circle cx="8" cy="8" r="8"/>
                   </svg>DUXGROUP VENTURES
                 </span>
-          We invest in <span class="blue">the future of iGaming</span>
+          We invest in <br /> <span class="blue">the future of<br> iGaming</span>
         </p>
       </div>
     </div>
@@ -68,6 +68,10 @@
     <div class="invest">
       <div class="title">
         <img src="../assets/images/ventures/invest/header.svg" />
+      </div>
+
+      <div class="list__title__mob">
+        <p>There are more than <span class="blue">350 professionals</span> in our team</p>
       </div>
       <div class="description">
         <div class="list">
@@ -148,8 +152,274 @@ export default {
 .blue{
   color: #2F5BD8;
 }
-@media screen {
+@media screen and (min-width: 1025px) and ( max-width: 1440px){
+    .container{
+      &>*{
+        margin-top: -1px;
+      }
+      .header{
+        &__menu{
+          background-image: url('../assets/images/ventures/header1024.png') !important;
+          min-height: 145px !important;
+        }
+        .content{
+          p{
+            font-size: 85px !important;
+            line-height: normal !important;
+            .brave{
+              margin: 0 !important;
+              vertical-align: bottom !important;
+            }
+          }
+        }
+      }
+      .investment{
+        padding-top: 100px !important;
+        .content{
+          padding: 200px 0 125px 25px !important;
+          p{
+            width: 75% !important;
+            font-size: 50px !important;
+          }
+        }
+        .imgs{
+          img:first-child{
+            top: 20px !important;
+            right: 20% !important;
+          }
+          img:nth-child(5){
+            top: 230px !important;
+            right: 0 !important;
+          }
+          img:nth-child(3){
+            left: 150px !important;
+          }
+          img:nth-child(2){
+            bottom: 0 !important;
+            right: 200px !important;
+          }
+        }
+      }
+      .principes{
+        padding-top: 10px !important;
+        padding-bottom: 110px !important;
+        .items{
+          .item{
+            &__title{
+              font-weight: 400 !important;
+              font-size: 22px !important;
+              line-height: 28px !important;
+              letter-spacing: 0.03em !important;
+            }
+            .text{
+              font-weight: 400 !important;
+              font-size: 20px !important;
+              line-height: 27px !important;
+            }
+          }
+        }
+      }
+      .invest{
+        .list__title__mob{
+          margin-top: 70px;
+          display: block !important;
+          width: 75% !important;
+          padding: 0 25px;
+        }
+        .description{
+          margin-top: 20px !important;
+          .list{
+            &__title{
+              display: none !important;
+            }
+          }
+        }
+      }
+      .introduce{
+        .content{
+          flex-direction: column !important;
+          &>*{
+            width: 100% !important;
+          }
+          .request p{
+            font-size: 58px !important;
+          }
+          .list ul{
+            padding-left: 20px !important;
+            li{
+              font-size: 19px !important;
+              span{
+                left: 20px !important;
+              }
+            }
+          }
+        }
+      }
+      .contact{
+        padding: 100px 0 !important;
+      }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .container{
+    &>*{
+      margin-top: -1px;
+    }
+    .header {
+      &__menu {
+        background-image: url('../assets/images/ventures/header768.png') !important;
+        min-height: 90px !important;
+        background-position:  top 0px right 0 !important;
 
+      }
+      .content{
+        p{
+          font-size: 68px !important;
+          line-height: normal !important;
+          .brave{
+            margin: 0 !important;
+            font-size: 20px !important;
+            width: 150px !important;
+            line-height: 25px !important;
+            vertical-align: baseline !important;
+          }
+        }
+      }
+    }
+    .investment{
+      padding-top: 50px !important;
+      .content{
+        padding: 90px 0 70px 8px !important;
+        p{
+          width: 75% !important;
+          font-size: 38px !important;
+        }
+      }
+      .imgs{
+        img:nth-child(4){
+          top: 80px !important;
+          left: 10px !important;
+          width: 40px !important;
+          height: 40px !important;
+        }
+        img:nth-child(3){
+          top: 0px !important;
+          left: 80px !important;
+          width: 75px !important;
+          height: 75px !important;
+        }
+        img:first-child{
+          top: 20px !important;
+          right: 20% !important;
+          width: 140px !important;
+          height: 110px !important;
+        }
+        img:nth-child(5){
+          top: 150px !important;
+          right: 20px !important;
+          width: 180px !important;
+          height: 175px !important;
+        }
+        img:nth-child(2){
+          bottom: 0 !important;
+          right: 200px !important;
+          width: 68px !important;
+          height: 62px !important;
+        }
+      }
+    }
+    .principes{
+      padding-top: 10px !important;
+      padding-bottom: 70px !important;
+      .items{
+        padding: 50px 8px 0 8px !important;
+        .item{
+          &__title{
+            font-size: 20px !important;
+            line-height: 25px !important;
+            letter-spacing: 0.03em !important;
+            p{
+              margin-left: 20px !important;
+            }
+            img{
+              width: 48px !important; ;
+            }
+          }
+          .text{
+            font-size: 16px !important;
+            line-height: 20px !important;
+            letter-spacing: 0.04em !important;
+          }
+        }
+      }
+    }
+    .invest{
+      .list__title__mob{
+        margin-top: 70px;
+        display: block !important;
+        width: 75% !important;
+        padding: 0 25px;
+        p{
+          font-size: 38px !important;
+          line-height: 48px !important;
+          letter-spacing: 0.03em !important;
+          text-transform: uppercase !important;
+        }
+      }
+      .description{
+        margin-top: 20px !important;
+        .list{
+          &__title{
+            display: none !important;
+          }
+          .items{
+            margin-top: 0 !important;
+          }
+        }
+      }
+      .advert{
+        padding: 48px 8px !important;
+        p{
+          font-size: 34px !important;
+          line-height: 110% !important;
+        }
+      }
+    }
+    .introduce{
+      .content{
+        flex-direction: column !important;
+        &>*{
+          width: 100% !important;
+        }
+        .request p{
+          font-size: 38px !important;
+        }
+        .list ul{
+          padding-left: 20px !important;
+          li{
+            font-size: 19px !important;
+            margin-bottom: 20px !important;
+            span{
+              left: 15px !important;
+            }
+          }
+        }
+      }
+    }
+    .contact{
+       padding: 70px 0 !important;
+      .title{
+        width: 95% !important;
+        margin: 0 auto;
+        p{
+          font-weight: 400 !important;
+          font-size: 38px !important;
+          line-height: 48px !important;
+          letter-spacing: 0.03em !important;
+        }
+      }
+    }
+  }
 }
 .container{
   .header{
@@ -187,7 +457,7 @@ export default {
         text-transform: uppercase;
         color: #F0F0F0;
         margin: 0;
-        width: 1350px;
+        //width: 1350px;
         .brave{
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
@@ -280,13 +550,13 @@ export default {
       padding: 100px 25px 0 25px;
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      align-items: flex-start;
       .item{
         width: 28%;
         &__title{
           display: flex;
           align-items: center;
-          font-family: 'Oxygen';
+          font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 28px;
@@ -299,7 +569,7 @@ export default {
           }
         }
         .text{
-          font-family: 'Exo';
+          font-family: 'Exo', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 26px;
@@ -316,9 +586,23 @@ export default {
   .invest{
     background-color: #010C28;
     .title{
-      padding: 0 25px;
+      padding: 1px 25px;
       img{
         width: 100%;
+      }
+    }
+    .list__title__mob{
+      display: none;
+      p{
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 105%;
+        margin: 0;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #F0F0F0;
       }
     }
     .description{

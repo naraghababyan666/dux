@@ -29,6 +29,25 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+@media screen and (max-width: 1024px){
+  .menu{
+    padding: 25px 8px !important;
+    .logo{
+      width: 110px !important;
+      img{
+        width: 100% !important;
+      }
+    }
+    .menu-items{
+      font-size: 12px !important;
+      letter-spacing: 0.04em !important;
+      a:not(:last-child){
+        margin-right: 30px !important;
+      }
+    }
+  }
+}
 .menu{
   //background-color: grey;
   display: flex;
