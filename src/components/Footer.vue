@@ -24,6 +24,27 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .footer{
+    flex-direction: column !important;
+    align-items: inherit !important;
+    .menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      a{
+        margin: 15px 0px !important;
+        text-align: center;
+      }
+    }
+    .link{
+      a{
+
+      margin-left: 5px !important;}
+    }
+  }
+}
   .footer{
     display: flex;
     align-items: center;

@@ -18,7 +18,9 @@
     </div>
     <div class="investment">
       <div class="title">
+
         <img src="../assets/images/ventures/investment/title.svg" />
+        <img src="../assets/images/ventures/investment/title320.svg" class="small-header"/>
       </div>
       <div class="content">
         <p><span class="blue">DUXGROUP VENTURES</span> IS A VENTURE CAPITAL FUND THAT INVESTS <span class="blue">€1-5 MILLION</span> IN IGAMING PROJECTS IN LINE WITH A <span class="blue">WIN-WIN MODEL</span> </p>
@@ -34,6 +36,7 @@
     <div class="principes">
       <div class="title">
         <img src="../assets/images/ventures/principes/header.svg" />
+        <img src="../assets/images/ventures/principes/header320.svg" class="small-header" />
       </div>
       <div class="items">
         <div class="item">
@@ -68,6 +71,7 @@
     <div class="invest">
       <div class="title">
         <img src="../assets/images/ventures/invest/header.svg" />
+        <img src="../assets/images/ventures/invest/header320.svg" class="small-header"/>
       </div>
 
       <div class="list__title__mob">
@@ -104,6 +108,7 @@
     <div class="introduce">
       <div class="title">
         <img src="../assets/images/ventures/introduce/header.svg" />
+        <img src="../assets/images/ventures/introduce/header320.svg" class="small-header"/>
       </div>
       <div class="content">
         <div class="request">
@@ -144,13 +149,16 @@ import HeaderPart from "@/components/Header";
 import FooterPart from "@/components/Footer";
 export default {
   name: "Ventures-page",
-  components: {FooterPart, HeaderPart}
+  components: {FooterPart, HeaderPart},
 }
 </script>
 
 <style scoped lang="scss">
 .blue{
   color: #2F5BD8;
+}
+.small-header{
+  display: none;
 }
 @media screen and (min-width: 1025px) and ( max-width: 1440px){
     .container{
@@ -260,7 +268,7 @@ export default {
       }
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
   .container{
     &>*{
       margin-top: -1px;
@@ -421,6 +429,227 @@ export default {
     }
   }
 }
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .small-header{
+    display: block !important;
+  }
+  .container {
+    & > * {
+      margin-top: -1px;
+    }
+    .header {
+      &__menu {
+        background-image: url('../assets/images/ventures/header320.png') !important;
+        min-height: 120px !important;
+        background-position: top 0px right 0 !important;
+
+      }
+
+      .content {
+        p {
+          font-size: 34px !important;
+          line-height: 110% !important;
+          .brave {
+            display: block !important;
+            margin: 0 !important;
+            font-size: 16px !important;
+            text-align: left !important;
+            line-height: 20px !important;
+          }
+        }
+      }
+    }
+    .investment{
+      padding-top: 70px !important;
+      .title{
+        padding: 0 15px !important;
+        img:nth-child(1){
+          display: none !important;
+        }
+      }
+      .content{
+        padding: 100px 0 60px 8px !important;
+        p{
+          width: 90% !important;
+          font-size: 22px !important;
+          text-align: center !important;
+        }
+      }
+      .imgs{
+        img:nth-child(4){
+          top: 80px !important;
+          left: 10px !important;
+          width: 30px !important;
+          height: 30px !important;
+        }
+        img:nth-child(3){
+          top: 10px !important;
+          left: 15% !important;
+          width: 55px !important;
+          height: 55px !important;
+        }
+        img:first-child{
+          top: 40px !important;
+          left: 35% !important;
+          width: 80px !important;
+          height: 66px !important;
+        }
+        img:nth-child(5){
+          top: 0px !important;
+          right: 10px !important;
+          width: 105px !important;
+          height: 100px !important;
+        }
+        img:nth-child(2){
+          bottom: 0 !important;
+          right: 30% !important;
+          width: 74px !important;
+          height: 67px !important;
+        }
+      }
+    }
+    .principes{
+      .title{
+        padding: 0 15px !important;
+        img:first-child{
+          display: none;
+        }
+      }
+      padding-top: 10px !important;
+      padding-bottom: 70px !important;
+      .items{
+        padding: 38px 16px 0 16px !important;
+        flex-direction: column !important;
+        .item{
+          width: 100% !important;
+          &__title{
+            font-size: 22px !important;
+            line-height: 28px !important;
+            letter-spacing: 0.03em !important;
+            p{
+              margin-left: 20px !important;
+            }
+            img{
+              width: 48px !important; ;
+            }
+          }
+          .text{
+            font-size: 16px !important;
+            line-height: 20px !important;
+            letter-spacing: 0.04em !important;
+          }
+        }
+      }
+    }
+    .invest{
+      .title{
+        img:first-child{
+          display: none;
+        }
+      }
+      .list__title__mob{
+        margin-top: 70px;
+        display: block !important;
+        padding: 0 16px;
+        p{
+          font-size: 22px !important;
+          line-height: 28px !important;
+          letter-spacing: 0.03em !important;
+          text-transform: uppercase !important;
+        }
+      }
+      .description{
+        margin-top: 20px !important;
+        flex-direction: column !important;
+        .list{
+          &__title{
+            display: none !important;
+          }
+          .items{
+            margin-top: 0 !important;
+            ul{
+              padding: 0 16px !important;
+              li{
+                font-size: 16px !important;
+                line-height: 20px !important;
+                letter-spacing: 0.03em !important;
+
+              }
+            }
+          }
+        }
+        .img{
+          width: 100% !important;
+
+          img{
+            width: 100% !important;
+          }
+        }
+      }
+      .advert{
+        padding: 36px 17px 72px 17px !important;
+        p{
+          font-size: 16px !important;
+          line-height: 20px !important;
+          letter-spacing: 0.03em !important;
+          width: 100% !important;
+          text-align: left !important;
+          margin: 0 !important;
+        }
+      }
+    }
+    .introduce{
+      .title{
+        img:first-child{
+          display: none;
+        }
+      }
+      .content{
+        flex-direction: column !important;
+        margin-top: 40px !important;
+        &>*{
+          width: 100% !important;
+        }
+        .request p{
+          font-size: 22px !important;
+          line-height: 28px !important;
+          letter-spacing: 0.03em !important;
+        }
+        .list ul{
+          padding-left: 16px !important;
+          margin-top: 36px !important;
+          li{
+            font-size: 14px !important;
+            margin-bottom: 18px !important;
+            letter-spacing: 0.04em !important;
+            span{
+              left: 10px !important;
+            }
+          }
+        }
+      }
+    }
+    .contact{
+      padding: 50px 0 !important;
+      .title{
+        width: 95% !important;
+        margin: 0 auto;
+        p{
+          font-weight: 400 !important;
+          font-size: 22px !important;
+          line-height: 28px !important;
+          letter-spacing: 0.03em !important;
+        }
+      }
+      .form{
+        margin-top: 30px !important;
+        width: 80% !important;
+      }
+    }
+  }
+}
+
+
 .container{
   .header{
     background: linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
@@ -695,7 +924,7 @@ export default {
       .request{
         width: 40%;
         p{
-          font-family: 'Oxygen';
+          font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 60px;
@@ -716,7 +945,7 @@ export default {
               margin-bottom: 25px;
             }
             span{
-              font-family: 'Exo';
+              font-family: 'Exo', inherit;
               font-style: normal;
               font-weight: 400;
               font-size: 20px;
