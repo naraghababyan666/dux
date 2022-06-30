@@ -2,7 +2,7 @@
   <div>
 
     <div class="careers-banner">
-      <HeaderPart/>
+<!--      <HeaderPart/>-->
       <h1 class="careers-banner__title">
         <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
                                    alt="elipse">Careers</span>
@@ -190,6 +190,7 @@
         <h2 class="stage-container-title">Stage 05</h2>
         <p class="stage-container-sub-title">Offer stage</p>
       </div>
+      <img class="mobile-line" src="../assets/images/careers/mobile-line.svg" alt="mobile"/>
     </div>
     <div class="devider">
       <img src="../assets/images/careers/about.svg" alt="about"/>
@@ -299,18 +300,19 @@
       </h2>
     </div>
     <div class="footer">
-      <FooterPart/>
+<!--      <FooterPart/>-->
     </div>
   </div>
 </template>
 
 <script>
-import HeaderPart from "@/components/Header";
-import FooterPart from "@/components/Footer";
+//import HeaderPart from "@/components/Header";
+//import FooterPart from "@/components/Footer";
 
 export default {
   name: "Careers-page",
-  components: {HeaderPart, FooterPart}
+  components: {}
+  // HeaderPart, FooterPart
 }
 </script>
 
@@ -327,9 +329,7 @@ export default {
   justify-content: center;
   padding: 150px 115px;
   & .title {
-
-    width: 1212px;
-    height: 244px;
+    max-width: 1212px;
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -346,7 +346,9 @@ export default {
 .color-blue {
   color: #2F5BD8;
 }
-
+.mobile-line{
+  display: none;
+}
 .careers-banner {
   background: url("../assets/images/careers/careers-bg.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   min-height: 702px;
@@ -585,7 +587,7 @@ export default {
   align-items: center;
   padding: 96px 25px 0 25px;
   justify-content: space-between;
-
+ position: relative;
   & .line-svg {
     margin: 0 10px;
   }
@@ -647,6 +649,7 @@ export default {
   align-items: center;
 
   &-title {
+    margin-top: 96px;
     max-width: 820px;
     text-align: center;
     font-family: 'Oxygen', sans-serif;
@@ -672,7 +675,7 @@ export default {
       display: flex;
 
       &-dote {
-        margin-right: 102px;
+        margin-right: 10%;
         padding-top: 10px;
       }
 
@@ -719,25 +722,333 @@ export default {
 }
 
 @media only screen and (max-width: 1160px) {
+  .careers-banner{
+    min-height: 0;
+  }
   .careers-banner__title {
+    max-width: 649px;
     font-size: 84px;
+    margin-top: 98px;
+  }
+  .devider{
+    padding-top:105px;
   }
   .careers-form__container {
     padding: 32px;
   }
-
+  .benefits__title{
+    max-width: 960px;
+    font-size: 58px;
+  }
+  .row__text{
+    max-width: 285px;
+    font-size: 22px;
+  }
+  .career__title{
+    max-width: 577px;
+    font-size: 68px;
+  }
+  .stage-container{
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .stage-container-title{
+    font-size: 22px !important;
+  }
+  .stage-container-sub-title{
+    font-size: 16px !important;
+  }
+  .stage-container-sub-text{
+    font-size: 10px !important;
+  }
+  .igaming-container-left-side-title{
+    max-width: 307px;
+    font-size: 34px !important;
+  }
+  .igaming-container-right-side-text{
+    max-width: 480px;
+    font-size: 18px !important;
+  }
+  .title-container{
+    padding: 110px 32px;
+  }
 }
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 960px) {
 
-  .form-left-side-title {
+  .careers-banner__title{
+    max-width: 493px  !important;
+    font-size: 68px !important;
+    margin-top: 50px;
+  }
+  .devider{
+    padding-top:72px;
+  }
+  .benefits{
+    padding: 56px;
+  }
+  .benefits__title{
+    max-width: 752px  !important;
+    font-size: 38px !important;
+  }
+  .row__text{
+    max-width: 217px  !important;
+    font-size: 16px !important;
+  }
+  .career{
+    padding-top: 56px;
+  }
+  .career__title{
+    max-width: 475px !important;
+    font-size: 58px !important;
+  }
+  .stage-container{
+    max-width: 150px  !important;
+    max-height: 150px  !important;
+  }
+  .career-main-block{
+    padding: 48px 26px;
+  }
+  .stages{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 500px;
+  }
+  .stage-container{
+    margin-top: 36px;
+
+    &:nth-child(1){
+      margin-top: 0;
+    }
+    &:nth-child(3){
+      margin-top: 0;
+    }
+    &:nth-child(5){
+      margin-top: 0;
+    }
+    &:nth-child(7){
+      margin-top: 0;
+    }
+  }
+  .line-svg:nth-child(8){
+    display: none;
+  }
+  .stage-container-title{
+    max-width: 130px  !important;
     font-size: 20px !important;
   }
-  .form-left-side-text {
+  .stage-container-sub-title{
+    max-width: 107px  !important;
+    font-size: 14px !important;
+  }
+  .stage-container-sub-text{
+    max-width: 123px  !important;
+    font-size: 9px !important;
+  }
+  .igaming-title{
+    max-width: 591px  !important;
+    font-size: 38px  !important;
+  }
+.igaming-container-left-side-title{
+  max-width: 268px  !important;
+  font-size: 22px !important;
+}
+  .igaming-container-right-side-text{
+    max-width: 376px  !important;
+    font-size: 16px !important;
+  }
+  .title-container{
+    padding: 72px 8px  !important;
+  }
+  .title{
+    max-width: 752px  !important;
+    font-size: 38px  !important;
+  }
+}
+@media only screen and (max-width: 844px) {
+  .line-svg:nth-child(6){
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 77.6vw;
+    transform: rotate(180deg);
+  }
+  .line-svg:nth-child(8){
+    display: block;
+    position: absolute;
+    top: 95%;
+    transform: rotate(180deg);
+    right: 51%;
+  }
+  .mobile-line{
+    display: block;
+    position: absolute;
+    left: 84vw;
+    top: 372px;
+  }
+  .stage-container{
+    &:nth-child(7){
+
+      margin-top: 36px;
+      position: absolute;
+      top: 73%;
+      right: 30%;
+    }
+
+    &:nth-child(9){
+      margin-top: 36px;
+      position: absolute;
+      right: 63%;
+      top: 73%;
+    }
+  }
+
+}
+@media only screen and (max-width: 816px) {
+
+  .line-svg:nth-child(6) {
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 77.2vw;
+    transform: rotate(180deg);
+  }
+}
+@media only screen and (max-width: 772px) {
+
+  .line-svg:nth-child(6) {
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 76.8vw;
+    transform: rotate(180deg);
+  }
+}
+@media only screen and (max-width: 718px) {
+
+  .line-svg:nth-child(6) {
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 76.3vw;
+    transform: rotate(180deg);
+  }
+  .line-svg:nth-child(8){
+    display: block;
+    position: absolute;
+    top: 95%;
+    transform: rotate(180deg);
+    right: 52%;
+  }
+}
+@media only screen and (max-width: 633px) {
+  .careers{
+    display: flex;
+    margin: 0 !important;
+    max-width: 72px !important;
+    font-size: 16px !important;
+  }
+  .careers-banner__title{
+    max-width: 251px !important;
+
+    font-size: 34px !important;
+  }
+  .mobile-line{
+    display: none;
+  }
+  .line-svg{
+    position: initial !important;
+    transform: rotate(90deg) !important;
+    margin-top: 5px !important;
+  }
+  .stages {
+    display: flex;
+    height: 1180px !important;
+  }
+  .stage-container{
+    margin: 20px 0!important;
+    width: 100% !important;
+    max-width: 100%!important;
+  }
+  .stage-container:nth-child(7) {
+
+   position: initial;
+
+  }
+  .stage-container:nth-child(9) {
+
+    position: initial;
+
+  }
+  .stage-container-sub-title {
+    max-width: 100% !important;
+    font-size: 14px !important;
+  }
+  .stage-container-title {
+    max-width: 100% !important;
+    font-size: 14px !important;
+  }
+  .stage-container-sub-text {
+    max-width: 100% !important;
+    font-size: 14px !important;
+  }
+  .line marquee{
+    height: 48px;
+    font-size: 38px;
+  }
+  .line marquee svg{
+    margin: 0;
+  }
+  .benefits{
+    padding: 32px;
+  }
+  .benefits__title{
+    max-width: 288px !important;
+    font-size: 22px !important;
+  }
+  .row__container{
+    width: 100%;
+    flex-direction: column;
+  }
+  .row__text{
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 18px !important;
+  }
+  .career__title{
+    max-width: 265px !important;
+    font-size: 34px !important;
+  }
+  .career-main-block{
+    padding: 32px 8px
+  }
+  .career-main-block-items-text-container{
+    flex-direction: column;
+  }
+  .igaming-title{
+    max-width: 287px !important;
+    font-size: 34px !important;
+  }
+  .igaming-container{
+    flex-direction: column;
+  }
+  .igaming-container-right-side-text{
+    margin-top: 10px;
+  }
+  .igaming-container-left-side-dote{
+    margin: 10px;
+  }
+  .igaming-container-left-side-title{
+    max-width: 261px !important;
     font-size: 20px !important;
   }
-  .form-right-side-input {
-    width: 352px !important;
+  .igaming-container-right-side-text{
+    max-width: 288px !important;
+    font-size: 14px !important;
+  }
+  .title{
+    max-width: 288px !important;
+    font-size: 22px !important;
   }
 }
 </style>
