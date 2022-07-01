@@ -2,7 +2,7 @@
   <div>
 
     <div class="careers-banner">
-<!--      <HeaderPart/>-->
+      <HeaderPart/>
       <h1 class="careers-banner__title">
         <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
                                    alt="elipse">Careers</span>
@@ -300,19 +300,19 @@
       </h2>
     </div>
     <div class="footer">
-<!--      <FooterPart/>-->
+      <FooterPart/>
     </div>
   </div>
 </template>
 
 <script>
-//import HeaderPart from "@/components/Header";
-//import FooterPart from "@/components/Footer";
+import HeaderPart from "@/components/Header";
+import FooterPart from "@/components/Footer";
 
 export default {
   name: "Careers-page",
-  components: {}
-  // HeaderPart, FooterPart
+  components: { HeaderPart, FooterPart}
+
 }
 </script>
 
@@ -1039,16 +1039,22 @@ export default {
     margin: 10px;
   }
   .igaming-container-left-side-title{
-    max-width: 261px !important;
+    max-width: 100% !important;
     font-size: 20px !important;
   }
   .igaming-container-right-side-text{
-    max-width: 288px !important;
+    max-width: 100% !important;
     font-size: 14px !important;
   }
   .title{
     max-width: 288px !important;
     font-size: 22px !important;
+  }
+  .row__container{
+    margin-top: 0 !important;
+  }
+  .row__container:nth-child(1){
+    margin-top:39px!important;
   }
 }
 </style>
